@@ -15,7 +15,6 @@ console.log('Before');
 doSomething();
 console.log('After');
 
-
 const anotherFunction = async () =>{
     try {
         const something = await doSomethingAsync();        
