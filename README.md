@@ -14,5 +14,5 @@
 	Desventajas: Posible error si no se retorna el siguiente llamado. No corre en todos los navegadores.
 
 ##### Async
-		Ventajas: Se puede usar try-catch . Código más ordenado e intuitivo.
-		Desventajas: No corre en todos los navegadores (se requiere un transpilador).
+	Ventajas: Se puede usar try-catch . Código más ordenado e intuitivo.
+	Desventajas: No corre en todos los navegadores (se requiere un transpilador).

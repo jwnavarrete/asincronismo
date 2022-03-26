@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty API</title>
+  </head>
+  <link rel="stylesheet" href="./utils/css/base.css" />  
+  <script src="./utils/js/main.js"></script>
+
+  <body>
+    <div id="app">
+      <nav class="header">
+        <section class="header--container">
+          <h1 tabindex="0" class="header--title">Rick and Morty API</h1>
+          <ul class="header__ul-menu">
+            <li><a href="./index.html" class="ul-option"> Characters </a></li>            
+          </ul>
+          <button class="btn--showMenu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+          <button class="btn--showMenu" style="display: none">
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+          <div class="header__float-menu" style="display: none">
+            <ul class="float--container">
+              <li><a href="./index.html" class="ul-option"> Home </a></li>
+              <li>
+                <a href="./characters.html" class="ul-option menuActive">
+                  Characters
+                </a>
+              </li>
+              <li><a href="#about-me" class="ul-option"> About me </a></li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+
+      <main access-control-allow-origin:="" https:="" rickandmortyapi.com="" class="character__container">
+        <h3 tabindex="0" class="character--title"> Characters of the series </h3> 
+        <section id="character--container" class="character__grid">
+          <div class="character--card">
+            <img src="https://rickandmortyapi.com/api/character/avatar/341.jpeg" alt="" class="card--img"> 
+            <div class="card--details">
+              <h5 class="card-name"> Name: Taddy Mason </h5>
+              <div class="status">
+                <h5 class="card-status--name"> Status: Alive </h5>
+              </div> 
+              <h5 class="card-species"> Species: Human </h5> 
+              <h5 class="card-origin"> Origin: Earth (Replacement Dimension) </h5>
+            </div>          
+          </div>                
+        </section> 
+        <section class="refresh_Button">
+          <button id="btn-r" onclick="location.reload()">
+            <i aria-hidden="true" class="fas fa-redo"></i> REFRESH
+          </button>
+        </section>
+      </main>
+
+      <footer id="about-me" class="section__container">
+        <div class="container--footer">
+          <p>JOHN NAVARRETE ~ WEB DEVELOPER <i id="heart" class="fas fa-heart" aria-hidden="true"></i>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
